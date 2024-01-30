@@ -4,12 +4,12 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 
 ## Base Requirements
 
-- [ ] Fetch data from the API
-- [ ] Render the results of the API
+- [ ] Fetch data from the `API`
+- [ ] Render the results of the `API`
 
 ## Polishing
 
 - [ ] Style the page
-- [ ] Use differnt fonts
+- [ ] Use a different font
 - [ ] Add animations
 
