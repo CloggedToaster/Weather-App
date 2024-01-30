@@ -1,6 +1,6 @@
 # Weather App
 
-A weather app to display the latitude, longitude, temperature, and weather condition of a city using the [`open-meteo`](https://open-meteo.com/) api.
+A weather app to display the latitude, longitude, temperature, and weather condition of a city using the [`open-meteo`](https://open-meteo.com/) API.
 
 ## What it boils down to...
 - [ ] Fetch data from the `API`
