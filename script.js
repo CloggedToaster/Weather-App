@@ -50,28 +50,25 @@ const fetchWeather = async(latitude, longitude) => {
     };
 }
 
-// fetchLocation("Melbourne")
-// .then(locationResponse => {
-//     fetchWeather(locationResponse.latitude, locationResponse.longitude).then(weatherResponse => {
-//         console.log(weatherResponse.temperature);
-//         console.log(weatherResponse.weatherCode);
-//         console.log(weatherResponse.cloudCoverage);
-//     });
-//     console.log(Math.abs(locationResponse.longitude)+(locationResponse.longitude>0?"° E":"° W"));
-//     console.log(Math.abs(locationResponse.latitude)+(locationResponse.latitude>0?"° N":"° S"));
-//     console.log(locationResponse.location);
-// });
-
-
-fetchLocation("Newark")
-.then(locationResponse => {
-    fetchWeather(locationResponse.latitude, locationResponse.longitude).then(weatherResponse => {
-        console.log(weatherResponse.temperature);
-        console.log(weatherResponse.weatherCode);
-        console.log(weatherResponse.cloudCoverage);
+const printCityData = async (cityName) => {
+    fetchLocation(cityName)
+    .then(locationResponse => {
+        fetchWeather(locationResponse.latitude, locationResponse.longitude).then(weatherResponse => {
+            console.log(weatherResponse.temperature);
+            console.log(weatherResponse.weatherCode);
+            console.log("Cloud Coverage: "+weatherResponse.cloudCoverage);
+        });
+        const latitudeString = Math.abs(locationResponse.latitude)+(locationResponse.latitude>0?"° N":"° S");
+        const longitudeString = Math.abs(locationResponse.longitude)+(locationResponse.longitude>0?"° E":"° W");
+        const locationString = cityName+", "+locationResponse.location;
+        
+        console.log(latitudeString+", "+longitudeString);
+        console.log(locationString);
     });
-    const latitudeString = Math.abs(locationResponse.latitude)+(locationResponse.latitude>0?"° N":"° S");
-    const longitudeString = Math.abs(locationResponse.longitude)+(locationResponse.longitude>0?"° E":"° W");
-    console.log(latitudeString+", "+longitudeString);
-    console.log(locationResponse.location);
-});
+}
+
+printCityData("Melbourne");
+// printCityData("Newark");
+// printCityData("London");
+// printCityData("Tokyo");
+// printCityData("Beijing");
