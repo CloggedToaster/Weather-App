@@ -10,14 +10,22 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 - [x] Fetch data with a hard-coded query from the `API` 
 - [x] Print the results to the `console`
 
-![Console results for 'Madison' query](/assets/images/Madison_Console.png =250x250)
+<picture>
+    <img alt="Console results for Madison query" src="./assets/images/Madison_Console.png" width=50% height=50%>
+</picture>
+
 
 ## Level 2
 - [x] Add a `form` that takes in a city to pass into the `API`
 - [x] Display the results to an `HTML element`
 
-![Webpage results for 'Madison' query](/assets/images/Madison_Webpage.png =250x250)
-![GIF image of both webpage and console results for Madison, Anchorage, and Edison](/assets/images/City_Demo.gif =250x250)
+<picture>
+    <img alt="Webpage results for Madison query" src="./assets/images/Madison_Webpage.png" width=50% height=50%>
+</picture>
+
+<picture>
+    <img alt="GIF of both webpage and console results for Madison, Anchorage, and Edison" src="./assets/images/City_Demo.gif" width=50% height=50%>
+</picture>
 
 ## Level 3
 - [ ] Allow the most recent city to saved to local memory
