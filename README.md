@@ -7,8 +7,8 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 - [ ] Render the results of the `API`
 
 ## Level 1
-- [ ] Fetch data with a hard-coded query from the `API` 
-- [ ] Print the results to the `console`
+- [x] Fetch data with a hard-coded query from the `API` 
+- [x] Print the results to the `console`
 
 ## Level 2
 - [ ] Add a `form` that takes in a city to pass into the `API`
