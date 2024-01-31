@@ -7,13 +7,19 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 - [ ] Render the results of the `API`
 
 ## Level 1
-- [ ] Fetch data with a hard-coded query from the `API` 
-- [ ] Print the results to the `console`
+- [x] Fetch data with a hard-coded query from the `API` 
+- [x] Print the results to the `console`
+
+![Console results for 'Madison' query](/assets/images/Madison_Console.png =250x250)
 
 ## Level 2
-- [ ] Add a `form` that takes in a city to pass into the `API`
-- [ ] Display the results to an `HTML element`
+- [x] Add a `form` that takes in a city to pass into the `API`
+- [x] Display the results to an `HTML element`
+
+![Webpage results for 'Madison' query](/assets/images/Madison_Webpage.png =250x250)
+![GIF image of both webpage and console results for Madison, Anchorage, and Edison](/assets/images/City_Demo.gif =250x250)
 
 ## Level 3
 - [ ] Allow the most recent city to saved to local memory
 - [ ] Style the page
+
