@@ -1,0 +1,12 @@
+:root{
+    --text-color: #be0808;
+}
+
+.container {
+    
+    color: var(--text-color);
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
