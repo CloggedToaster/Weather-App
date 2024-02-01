@@ -24,7 +24,7 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 </picture>
 
 <picture>
-    <img alt="GIF of both webpage and console results for Madison, Anchorage, and Edison" src="./assets/images/City_Demo.gif" width=50% height=50% style="border-radius:4%">
+    <img alt="GIF of both webpage and console results for Madison, Anchorage, and Edison" src="./assets/images/City_Demo.gif" width=50% height=50%>
 </picture>
 
 ## Level 3
