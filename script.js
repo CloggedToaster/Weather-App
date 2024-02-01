@@ -122,20 +122,24 @@ const handleFormSubmit = (event) => {
 
         const cityNameDiv = document.getElementById("cityNameDiv");
         
-        const locationHeader = document.createElement("h2");
-        const temperatureHeader = document.createElement("h3");
-        const latitudeHeader = document.createElement("h3");
-        const longitudeHeader = document.createElement("h3");
+        const cityNameHeader = document.getElementById("cityNameHeader");
+        const temperatureHeader = document.getElementById("temperatureHeader");
+        const coordinateHeader = document.getElementById("coordinateHeader");
         
-        locationHeader.innerText = res.locationString;
+        
+        cityNameHeader.innerText = res.locationString;
         temperatureHeader.innerText = res.temperatureString;
-        latitudeHeader.innerText = res.latitudeString;
-        longitudeHeader.innerText = res.longitudeString;
+        coordinateHeader.innerText = res.latitudeString + ", " + res.longitudeString;
 
-        cityNameDiv.appendChild(locationHeader)
-        cityNameDiv.appendChild(temperatureHeader)
-        cityNameDiv.appendChild(latitudeHeader)
-        cityNameDiv.appendChild(longitudeHeader)
+        // locationHeader.innerText = res.locationString;
+        // temperatureHeader.innerText = res.temperatureString;
+        // latitudeHeader.innerText = res.latitudeString;
+        // longitudeHeader.innerText = res.longitudeString;
+
+        // cityNameDiv.appendChild(locationHeader)
+        // cityNameDiv.appendChild(temperatureHeader)
+        // cityNameDiv.appendChild(latitudeHeader)
+        // cityNameDiv.appendChild(longitudeHeader)
     })
     
 }
