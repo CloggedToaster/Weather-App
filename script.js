@@ -130,16 +130,6 @@ const handleFormSubmit = (event) => {
         cityNameHeader.innerText = res.locationString;
         temperatureHeader.innerText = res.temperatureString;
         coordinateHeader.innerText = res.latitudeString + ", " + res.longitudeString;
-
-        // locationHeader.innerText = res.locationString;
-        // temperatureHeader.innerText = res.temperatureString;
-        // latitudeHeader.innerText = res.latitudeString;
-        // longitudeHeader.innerText = res.longitudeString;
-
-        // cityNameDiv.appendChild(locationHeader)
-        // cityNameDiv.appendChild(temperatureHeader)
-        // cityNameDiv.appendChild(latitudeHeader)
-        // cityNameDiv.appendChild(longitudeHeader)
     })
     
 }
