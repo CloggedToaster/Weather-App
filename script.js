@@ -96,8 +96,8 @@ const fetchAllData = async (cityName) => {
     const locationData = await fetchLocation(cityName);
     const weatherData = await fetchWeather(locationData.latitude, locationData.longitude);
 
-    weatherData.latitudeString = Math.abs(locationData.latitude)+(locationData.latitude>0?"° N":"° S");
-    weatherData.longitudeString = Math.abs(locationData.longitude)+(locationData.longitude>0?"° E":"° W");
+    weatherData.latitudeString = String(Math.abs(locationData.latitude)).substring(0, 5) + (locationData.latitude>0?"° N":"° S");
+    weatherData.longitudeString = String(Math.abs(locationData.longitude)).substring(0, 5) + (locationData.longitude>0?"° E":"° W");
     weatherData.locationString = cityName+", "+locationData.location;
 
     data = {...locationData, ...weatherData};
