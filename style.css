@@ -1,12 +1,29 @@
 :root{
-    --text-color: #be0808;
+    --background-dark: #1f1b1b;
+    --text-color: #fff;
+
+    --max-width: 1400px;
+}
+
+body {
+    background-color: var(--background-dark);
+}
+
+.form-container {
+    color: var(--text-color);
+    
+    display: flex;
+    align-items: center;
+
 }
 
 .container {
     
     color: var(--text-color);
-    max-width: 1400px;
+    max-width: var(--max-width);
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+
