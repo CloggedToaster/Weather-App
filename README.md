@@ -11,7 +11,7 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 - [x] Print the results to the `console`
 
 <picture>
-    <img alt="Console results for Madison query" src="./assets/images/Madison_Console.png" width=50% height=50% style="border-radius:4%">
+    <img alt="Console results for Madison query" src="./assets/images/Madison_Console.png" width=50% height=50%>
 </picture>
 
 
@@ -20,7 +20,7 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 - [x] Display the results to an `HTML element`
 
 <picture>
-    <img alt="Webpage results for Madison query" src="./assets/images/Madison_Webpage.png" width=50% height=50% style="border-radius:4%">
+    <img alt="Webpage results for Madison query" src="./assets/images/Madison_Webpage.png" width=50% height=50%>
 </picture>
 
 <picture>
