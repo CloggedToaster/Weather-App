@@ -151,3 +151,8 @@ const handleFormSubmit = (event) => {
 const clearLocalStorage = () => {
     localStorage.clear();   
 }
+
+const handleDarkMode = () => {
+    const ele = document.body;
+    ele.classList.toggle('dark-mode');
+}
