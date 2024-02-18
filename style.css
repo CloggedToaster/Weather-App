@@ -1,12 +1,17 @@
 :root{
-    --background-dark: #1f1b1b;
-    --text-color: #fff;
+    --light-background: #fff;
+    --light-text-color: #000;
+
+    --dark-background: #000;
+    --dark-text-color: #fff;
+    --dark-highlight-color: #292424;
+    
 
     --max-width: 1400px;
 }
 
 body {
-    background-color: var(--background-dark);
+    background-color: var(--light-background);
 }
 
 .form-container {
@@ -27,3 +32,16 @@ body {
     justify-content: space-evenly;
 }
 
+
+
+.dark-mode {
+    background-color: var(--dark-background);
+}
+.dark-mode div {
+    color: var(--dark-text-color);
+}
+.dark-mode button {
+    color: var(--dark-text-color);
+    background-color: var(--dark-background);
+    border-color: var(--dark-highlight-color);
+}
