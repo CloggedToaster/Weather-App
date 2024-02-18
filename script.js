@@ -107,6 +107,21 @@ const fetchAllData = async (cityName) => {
 
 // Event Listeners
 window.addEventListener("DOMContentLoaded", (event) => {
+    if(localStorage.getItem('cityName')){
+        fetchAllData(localStorage.getItem('cityName'))
+        .then(res => {
+            const cityNameDiv = document.getElementById("cityNameDiv");
+            
+            const cityNameHeader = document.getElementById("cityNameHeader");
+            const temperatureHeader = document.getElementById("temperatureHeader");
+            const coordinateHeader = document.getElementById("coordinateHeader");
+            
+            cityNameHeader.innerText = res.locationString;
+            temperatureHeader.innerText = res.temperatureString;
+            coordinateHeader.innerText = res.latitudeString + ", " + res.longitudeString;
+        })
+    }
+
     const cityForm = document.getElementById("cityForm");
     const cityField = document.getElementById("cityField");
     if(cityForm) {
@@ -119,6 +134,7 @@ const handleFormSubmit = (event) => {
 
     fetchAllData(cityField.value)
     .then(res => {
+        localStorage.setItem('cityName', cityField.value);
 
         const cityNameDiv = document.getElementById("cityNameDiv");
         
@@ -126,11 +142,12 @@ const handleFormSubmit = (event) => {
         const temperatureHeader = document.getElementById("temperatureHeader");
         const coordinateHeader = document.getElementById("coordinateHeader");
         
-        
         cityNameHeader.innerText = res.locationString;
         temperatureHeader.innerText = res.temperatureString;
         coordinateHeader.innerText = res.latitudeString + ", " + res.longitudeString;
     })
-    
 }
   
+const clearLocalStorage = () => {
+    localStorage.clear();   
+}
