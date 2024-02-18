@@ -3,8 +3,8 @@
 A weather app to display the latitude, longitude, temperature, and weather condition of a city using the [`open-meteo`](https://open-meteo.com/) API.
 
 ## What it boils down to...
-- [ ] Fetch data from the `API`
-- [ ] Render the results of the `API`
+- [x] Fetch data from the `API`
+- [x] Render the results of the `API`
 
 ## Level 1
 - [x] Fetch data with a hard-coded query from the `API` 
@@ -28,6 +28,9 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 </picture>
 
 ## Level 3
-- [ ] Allow the most recent city to saved to local memory
+- [x] Allow the most recent city to saved to local memory
 - [ ] Style the page
 
+<picture>
+    <img alt="GIF of localstorage that is saved and cleared" src="./assets/images/LocalStorage_Demo.gif" width=100% height=100%>
+</picture>
