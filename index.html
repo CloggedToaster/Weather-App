@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>My Weather App</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -8,10 +9,19 @@
     </header>
     <body>
 
-        <form id="cityForm" class="form-container">
-            <input type="text" id="cityField" class="cityField" value="Madison">
-            <button type="submit" id="cityButton" class="cityButton">Search!</button>
-        </form> 
+        <div class="container">
+            <div>
+                <form id="cityForm" class="form-container">
+                <input type="text" id="cityField" class="cityField" value="Madison">
+                <button type="submit" id="cityButton" class="cityButton">Search!</button>
+                </form> 
+                <form>
+                    <button type='submit' id="clear-local-sotrage" onclick="clearLocalStorage()">Clear Local Storage</button>
+                </form>
+            </div>
+            
+        </div>
+        
 
         <div id="cityNameDiv" class="container"">
             <h2 id="cityNameHeader" class="cityNameHeader"></h2>
