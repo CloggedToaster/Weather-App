@@ -32,7 +32,10 @@ body {
     justify-content: space-evenly;
 }
 
-
+.function-buttons {
+    text-align: center;
+    padding-top: 0.6em;
+}
 
 .dark-mode {
     background-color: var(--dark-background);

@@ -34,7 +34,7 @@ A weather app to display the latitude, longitude, temperature, and weather condi
 <picture>
     <img alt="GIF of localstorage that is saved and cleared" src="./assets/images/LocalStorage_Demo.gif" width=100% height=100%>
 </picture>
-
+&nbsp;
 <picture>
     <img alt="GIF of dark mode toggle" src="./assets/images/DarkMode_Demo.gif" width=100% height=100%>
 </picture>
