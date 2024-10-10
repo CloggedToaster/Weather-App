@@ -10,6 +10,10 @@
     --max-width: 1400px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--light-background);
 }
