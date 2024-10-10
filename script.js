@@ -60,7 +60,7 @@ const fetchWeather = async(latitude, longitude) => {
 }
 
 const printCityData = async () => {
-    const cityName = document.getElementById("cityField").value;
+    const cityName = document.querySelector("#cityField").value;
     fetchLocation(cityName)
     .then(locationResponse => {
         if(locationResponse.error){
@@ -110,11 +110,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if(localStorage.getItem('cityName')){
         fetchAllData(localStorage.getItem('cityName'))
         .then(res => {
-            const cityNameDiv = document.getElementById("cityNameDiv");
+            const cityNameDiv = document.querySelector("#cityNameDiv");
             
-            const cityNameHeader = document.getElementById("cityNameHeader");
-            const temperatureHeader = document.getElementById("temperatureHeader");
-            const coordinateHeader = document.getElementById("coordinateHeader");
+            const cityNameHeader = document.querySelector("#cityNameHeader");
+            const temperatureHeader = document.querySelector("#temperatureHeader");
+            const coordinateHeader = document.querySelector("#coordinateHeader");
             
             cityNameHeader.innerText = res.locationString;
             temperatureHeader.innerText = res.temperatureString;
@@ -122,8 +122,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         })
     }
 
-    const cityForm = document.getElementById("cityForm");
-    const cityField = document.getElementById("cityField");
+    const cityForm = document.querySelector("#cityForm");
+    const cityField = document.querySelector("#cityField");
     if(cityForm) {
         cityForm.addEventListener("submit", handleFormSubmit, false);
     }
@@ -136,11 +136,11 @@ const handleFormSubmit = (event) => {
     .then(res => {
         localStorage.setItem('cityName', cityField.value);
 
-        const cityNameDiv = document.getElementById("cityNameDiv");
+        const cityNameDiv = document.querySelector("#cityNameDiv");
         
-        const cityNameHeader = document.getElementById("cityNameHeader");
-        const temperatureHeader = document.getElementById("temperatureHeader");
-        const coordinateHeader = document.getElementById("coordinateHeader");
+        const cityNameHeader = document.querySelector("#cityNameHeader");
+        const temperatureHeader = document.querySelector("#temperatureHeader");
+        const coordinateHeader = document.querySelector("#coordinateHeader");
         
         cityNameHeader.innerText = res.locationString;
         temperatureHeader.innerText = res.temperatureString;
