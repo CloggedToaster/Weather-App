@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>My Weather App</title>
-        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <header>
@@ -12,17 +12,17 @@
         <div class="container">
             <div>
                 <form id="cityForm" class="form-container">
-                <input type="text" id="cityField" class="cityField" value="Madison">
-                <button type="submit" id="cityButton" class="cityButton">Search!</button>
-                </form> 
-                <form class="function-buttons">
+                    <label for="cityField">Enter a city name:</label><br>
+                    <input type="text" id="cityField" class="cityField" value="Madison">
+                    <button type="submit" id="cityButton" class="cityButton">Search!</button>
+                    </form> 
+                    <form class="function-buttons">
                     <button type='submit' id="clear-local-storage" onclick="clearLocalStorage()">Clear Local Storage</button>
                 </form>
                 <div class="function-buttons">
                     <button onclick="handleDarkMode()">Toggle DarkMode</button>
                 </div>
             </div>
-            
         </div>
         
 
@@ -32,5 +32,7 @@
             <h2 id="coordinateHeader" class="coordinateHeader"></h2>
         </div>
 
+
+        <script src="script.js"></script>
     </body>
 </html>
